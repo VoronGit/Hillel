@@ -1,0 +1,25 @@
+button {
+    border: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    span {
+        color: black;
+        font-weight: bold;
+    }
+}
+
+.approveButton {
+    background-color: lightgreen;
+}
+
+.approveButton:hover {
+    background-color: lightyellow;
+}
+
+.cancelButton {
+    background-color: lightcoral;
+}
+
+.cancelButton:hover {
+    background-color: lightyellow;
+}
