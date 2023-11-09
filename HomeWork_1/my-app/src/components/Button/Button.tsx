@@ -2,12 +2,13 @@ import styles from "./Button.module.scss";
 
 interface ButtonProps {
     title: string,
-    type: string,
+    type: any,
+    styleType: string,
     clickCallback: any
 }
 
-const Button = ({title,type,clickCallback}:ButtonProps) => {
-    return <button className={styles[type]} onClick={clickCallback}><span>{title}</span></button>
+const Button = ({title,type,styleType,clickCallback}:ButtonProps) => {
+    return <button type={type} style={styles} className={styles[styleType]} onClick={clickCallback}><span>{title}</span></button>
 }
 
 export default Button;

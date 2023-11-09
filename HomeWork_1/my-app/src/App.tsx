@@ -4,11 +4,9 @@ import Applyform from "./components/ApplyForm/ApplyForm"
 function App() {
 
   return (
-    <>
-      <div className={styles.mainBlock}>
-        <Applyform></Applyform>
-      </div>
-    </>
+    <div className={styles.mainBlock}>
+      <Applyform></Applyform>
+    </div>
   )
 }
 
