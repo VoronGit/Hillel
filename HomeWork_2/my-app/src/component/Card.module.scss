@@ -1,0 +1,44 @@
+.image__container {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+}
+
+.level {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.card {
+    width: 100%;
+    max-width: 354px;
+    padding: 30px;
+}
+
+.image__container {
+    margin-bottom: 20px;
+}
+
+.card__title,
+.card__info {
+    margin-bottom: 10px;
+}
+
+.user {
+    display: flex;
+}
+
+.user img {
+    width: 30px;
+    height: 30px;
+}
+
+.card__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
