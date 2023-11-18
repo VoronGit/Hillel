@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.counterBlock {
+  position: relative;
+}
+
+.alert {
+  position: absolute;
+  bottom: -65px;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}

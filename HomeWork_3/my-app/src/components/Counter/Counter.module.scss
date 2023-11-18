@@ -1,0 +1,72 @@
+.mainBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.buttonRow {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+$transitionDiviation: 60px;
+$transitionTime: 0.3s;
+$normalFontSize: 126px;
+$smalFontSize: 112px;
+
+.counter {
+    margin: 0;
+    font-size: $normalFontSize;
+    line-height: $normalFontSize;
+    text-shadow: 2px 2px 2px lightgray;
+    pointer-events: none;
+    user-select: none;
+    min-height: $normalFontSize;
+}
+
+.setTransitionStart {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.slideToTheLeft {
+    transform: translateX(-$transitionDiviation);
+    font-size: $smalFontSize;
+    opacity: 0;
+    transition: all $transitionTime ease-in;
+}
+
+.slideToTheRight {
+    transform: translateX($transitionDiviation);
+    font-size: $smalFontSize;
+    opacity: 0;
+    transition: all $transitionTime ease-in;
+}
+
+.resetPositionToTheLeft {
+    transform: translateX(-$transitionDiviation);
+    font-size: $smalFontSize;
+    opacity: 0;
+}
+
+.resetPositionToTheRight {
+    transform: translateX($transitionDiviation);
+    font-size: $smalFontSize;
+    opacity: 0;
+}
+
+.slideFromTheLeft {
+    transform: translateX(0%);
+    font-size: $normalFontSize;
+    opacity: 1;
+    transition: all $transitionTime ease-out;
+}
+
+.slideFromTheRight {
+    transform: translateX(0%);
+    font-size: $normalFontSize;
+    opacity: 1;
+    transition: all $transitionTime ease-out;
+}
