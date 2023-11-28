@@ -1,0 +1,11 @@
+.mainLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.fakeInline {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+}
